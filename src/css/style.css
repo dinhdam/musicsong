@@ -12,7 +12,7 @@ body .music_player {
     position: relative;
     margin: 0 ;
     background: #402457;
-    height: 15rem;
+    height: 16rem;
     width: 40rem;
     -webkit-box-shadow: 10px 0px 20px -6px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 7px 20px -6px rgba(0, 0, 0, 0.75);
@@ -309,10 +309,8 @@ i:hover {
     margin-top: 12%;
 }
 .singer{
-    border: 1px solid black;
-    width: 80%;
-    height: 100px;
-    margin-top: 80%;
+    width: 100%;
+    margin-top: 70%;
 }
 .mb-3{
     border-bottom: 1px solid #f9f8eb;
@@ -328,4 +326,41 @@ i:hover {
     margin-left: 41%;
     color: #16599c;
     margin-top: .8rem;
+}
+/*chu de*/
+.card-deck{
+    height: 280px;
+    width: 680px;
+}
+/*tieu de*/
+
+.sarif{
+    font-size: 45px;
+}
+p.monospace{
+    font-family: FontAwesome;
+    font-size: 22px;
+    color: #16599c;
+}
+p.serif{
+    color: black;
+    font-size:18px;
+}
+
+.title sub.view {
+    width: 100%;
+    min-height: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+.title{
+    width: 50%;
+    display: inline-block;
+}
+.sub-view{
+    display: inline-block;
+    width: 48%;
+    float: right;
+    margin-top: .5rem;
+    
 }
