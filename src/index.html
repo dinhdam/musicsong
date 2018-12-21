@@ -1,376 +1,400 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title> Music Player  </title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <title> Music Player </title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
 
 
 </head>
 
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#"><i class="fas fa-home"> Home</i></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="container">
+        <a class="navbar-brand" href="#"><i class="fas fa-home"> Home</i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Link<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Link<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
 
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-      </form>
-      <div class="nav navbar-nav navbar-right">
-        <p class="navbar-text">
-          <a href="#" class="navbar-link" data-toggle="modal" data-target="#signin-modal">
-            <i class="fas fa-sign-in-alt"> Sign in</i></a></p>
-        <button type="button" class="btn btn-default navbar-btn" data-toggle="modal"
-                data-target="#signup-modal"><i class="fas fa-user-plus"> Sign up</i></button>
-        <button type="button" class="btn btn-default navbar-btn" data-toggle="modal"
-                data-target="#settings-modal"><i class="fas fa-cogs"></i></button>
-      </div>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="nav navbar-nav navbar-right">
+                <p class="navbar-text">
+                    <a href="#" class="navbar-link" data-toggle="modal" data-target="#signin-modal">
+                        <i class="fas fa-sign-in-alt"> Sign in</i></a></p>
+                <button type="button" class="btn btn-default navbar-btn" data-toggle="modal"
+                        data-target="#signup-modal"><i class="fas fa-user-plus"> Sign up</i></button>
+                <button type="button" class="btn btn-default navbar-btn" data-toggle="modal"
+                        data-target="#settings-modal"><i class="fas fa-cogs"></i></button>
+            </div>
+        </div>
     </div>
-  </div>
 </nav>
 <!-- End Navbar-header -->
 
 <div class="clear"></div>
 <!--music song-->
 <div class="banner">
-  <div class="row">
-    <div class="col-6">
+    <div class="row">
+        <div class="col-6">
 
-    <div class="playlist">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-      <div class="music_player">
-  <div class="artist_img">
-  <img  src="img/adele1.jpg" class="img-fluid">
-  </div>
-  <div class="time_slider">
-    <span class="runing_time">0:00</span>
-    <input type="range" value="0">
-    <span class="song_long">0:00</span>
-  </div>
-  <div class="now_playing">
-    <i class="fa fa-refresh" aria-hidden="true"></i>
+            <div class="playlist">
+                <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+                <div class="music_player">
+                    <div class="artist_img">
+                        <img src="img/adele1.jpg" class="img-fluid">
+                    </div>
+                    <div class="time_slider">
+                        <span class="runing_time">0:00</span>
+                        <input type="range" value="0">
+                        <span class="song_long">0:00</span>
+                    </div>
+                    <div class="now_playing">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
 
-    <p> now playing </p>
-    <i class="fa fa-heart" aria-hidden="true"></i>
-  </div>
-  <div class="music_info">
-    <h2>adele</h2>
-    <p class="date">12 - 2016</p>
-    <p class="song_title">Rolling in the deep</p>
-    <fieldset class="rating">
-    <input type="radio" id="star5" name="rating" value="5" /><label class ="full" for="star5" title="Awesome - 5 stars"></label>
-    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-</fieldset>
-  </div>
-  <div class="controllers">
-    <i class="fa fa-music" aria-hidden="true"></i>
-    <i class="fa fa-fast-backward" aria-hidden="true"></i>
-    <i class="fa fa-play" aria-hidden="true"></i>
-    <i class="fa fa-fast-forward" aria-hidden="true"></i>
-    <i class="fa fa-retweet" aria-hidden="true"></i>
-  </div>
-</div>
-      <div class="title">
-        <p class="monospace">Rolling In Deep</p>
-        <p class="serif">Adele</p>
-      </div>
-      <div class="sub-view">
-        <h5>999 <i class="fa fa-headphones"></i></h5>
-      </div>
+                        <p> now playing </p>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <div class="music_info">
+                        <h2>adele</h2>
+                        <p class="date">12 - 2016</p>
+                        <p class="song_title">Rolling in the deep</p>
+                        <fieldset class="rating">
+                            <input type="radio" id="star5" name="rating" value="5"/><label class="full" for="star5"
+                                                                                           title="Awesome - 5 stars"></label>
+                            <input type="radio" id="star4half" name="rating" value="4 and a half"/><label class="half"
+                                                                                                          for="star4half"
+                                                                                                          title="Pretty good - 4.5 stars"></label>
+                            <input type="radio" id="star4" name="rating" value="4"/><label class="full" for="star4"
+                                                                                           title="Pretty good - 4 stars"></label>
+                            <input type="radio" id="star3half" name="rating" value="3 and a half"/><label class="half"
+                                                                                                          for="star3half"
+                                                                                                          title="Meh - 3.5 stars"></label>
+                            <input type="radio" id="star3" name="rating" value="3"/><label class="full" for="star3"
+                                                                                           title="Meh - 3 stars"></label>
+                            <input type="radio" id="star2half" name="rating" value="2 and a half"/><label class="half"
+                                                                                                          for="star2half"
+                                                                                                          title="Kinda bad - 2.5 stars"></label>
+                            <input type="radio" id="star2" name="rating" value="2"/><label class="full" for="star2"
+                                                                                           title="Kinda bad - 2 stars"></label>
+                            <input type="radio" id="star1half" name="rating" value="1 and a half"/><label class="half"
+                                                                                                          for="star1half"
+                                                                                                          title="Meh - 1.5 stars"></label>
+                            <input type="radio" id="star1" name="rating" value="1"/><label class="full" for="star1"
+                                                                                           title="Sucks big time - 1 star"></label>
+                            <input type="radio" id="starhalf" name="rating" value="half"/><label class="half"
+                                                                                                 for="starhalf"
+                                                                                                 title="Sucks big time - 0.5 stars"></label>
+                        </fieldset>
+                    </div>
+                    <div class="controllers">
+                        <i class="fa fa-music" aria-hidden="true"></i>
+                        <i class="fa fa-fast-backward" aria-hidden="true"></i>
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                        <i class="fa fa-fast-forward" aria-hidden="true"></i>
+                        <i class="fa fa-retweet" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="title">
+                    <p class="monospace">Rolling In Deep</p>
+                    <p class="serif">Adele</p>
+                </div>
+                <div class="sub-view">
+                    <h5>999 <i class="fa fa-headphones"></i></h5>
+                </div>
 
-      <div class="songmusic">
-        <div class="mb-5">
-          <h3 class="footer-heading mb-4">List Song</h3>
-          <div class="block-25">
-            <ul class="list-unstyled">
-              <li class="mb-3">
-                <a href="#" class="d-flex">
-                  <figure class="image mr-4">
-                    <img src="img/adeles.png" alt="" class="img-fluid">
-                  </figure>
-                  <div class="text">
-                    <h3 class="heading font-weight-light"> Thu cuoi</h3>
-                    <small class="text-muted">Thu Minh</small>
-                  </div>
-                  <div class=" button">
-                    <i class="fa fa-play"></i>
-                    <i class="fa fa-download"></i>
-                    <i class="fa fa-plus"></i>
+                <div class="songmusic">
+                    <div class="mb-5">
+                        <h3 class="footer-heading mb-4">List Song</h3>
+                        <div class="block-25">
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <a href="#" class="d-flex">
+                                        <figure class="image mr-4">
+                                            <img src="img/adeles.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <div class="text">
+                                            <h3 class="heading font-weight-light"> Thu cuoi</h3>
+                                            <small class="text-muted">Thu Minh</small>
+                                        </div>
+                                        <div class=" button">
+                                            <i class="fa fa-play"></i>
+                                            <i class="fa fa-download"></i>
+                                            <i class="fa fa-plus"></i>
 
-                  </div>
+                                        </div>
 
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#" class="d-flex">
-                  <figure class="image mr-4">
-                    <img src="img/adeles.png" alt="" class="img-fluid">
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="d-flex">
+                                        <figure class="image mr-4">
+                                            <img src="img/adeles.png" alt="" class="img-fluid">
 
-                  </figure>
-                  <div class="text">
-                    <h3 class="heading font-weight-light">Thu can</h3>
-                    <small class="text-muted">Thu Minh</small>
-                  </div>
-                  <div class=" button">
-                    <i class="fa fa-play"></i>
-                    <i class="fa fa-download"></i>
-                    <i class="fa fa-plus"></i>
+                                        </figure>
+                                        <div class="text">
+                                            <h3 class="heading font-weight-light">Thu can</h3>
+                                            <small class="text-muted">Thu Minh</small>
+                                        </div>
+                                        <div class=" button">
+                                            <i class="fa fa-play"></i>
+                                            <i class="fa fa-download"></i>
+                                            <i class="fa fa-plus"></i>
 
-                  </div>
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#" class="d-flex">
-                  <figure class="image mr-4">
-                    <img src="img/adeles.png" alt="" class="img-fluid">
-                  </figure>
-                  <div class="text">
-                    <h3 class="heading font-weight-light"> Nang am xa dan</h3>
-                    <small class="text-muted">Thu Minh</small>
-                  </div>
-                  <div class=" buttonplay">
-                    <i class="fa fa-play"></i>
-                    <i class="fa fa-download"></i>
-                    <i class="fa fa-plus"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="d-flex">
+                                        <figure class="image mr-4">
+                                            <img src="img/adeles.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <div class="text">
+                                            <h3 class="heading font-weight-light"> Nang am xa dan</h3>
+                                            <small class="text-muted">Thu Minh</small>
+                                        </div>
+                                        <div class=" buttonplay">
+                                            <i class="fa fa-play"></i>
+                                            <i class="fa fa-download"></i>
+                                            <i class="fa fa-plus"></i>
 
-                  </div>
+                                        </div>
 
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#" class="d-flex">
-                  <figure class="image mr-4">
-                    <img src="img/adeles.png" alt="" class="img-fluid">
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="d-flex">
+                                        <figure class="image mr-4">
+                                            <img src="img/adeles.png" alt="" class="img-fluid">
 
-                  </figure>
-                  <div class="text">
-                    <h3 class="heading font-weight-light">Thu can</h3>
-                    <small class="text-muted">Thu Minh</small>
-                  </div>
-                  <div class=" button">
-                    <i class="fa fa-play"></i>
-                    <i class="fa fa-download"></i>
-                    <i class="fa fa-plus"></i>
+                                        </figure>
+                                        <div class="text">
+                                            <h3 class="heading font-weight-light">Thu can</h3>
+                                            <small class="text-muted">Thu Minh</small>
+                                        </div>
+                                        <div class=" button">
+                                            <i class="fa fa-play"></i>
+                                            <i class="fa fa-download"></i>
+                                            <i class="fa fa-plus"></i>
 
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class=" singer">
+                    <h2 class="title-section fs18"> Play List</h2>
+                    <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top" src="img/giangsinh.jpg" alt="Card image cap">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Giang Sinh</h5>
+                                <p class="card-text">Giang sinh ron rang</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="img/muadong.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Mua Dong</h5>
+                                <p class="card-text">Mua le hoi</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="img/giangsinh.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Nam moi</h5>
+                                <p class="card-text">Mua yeu thuong</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top" src="img/giangsinh.jpg" alt="Card image cap">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Giang Sinh</h5>
+                                <p class="card-text">Giang sinh ron rang</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="img/muadong.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Mua Dong</h5>
+                                <p class="card-text">Mua le hoi</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="img/giangsinh.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Nam moi</h5>
+                                <p class="card-text">Mua yeu thuong</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-6">col-4</div>
         </div>
-      </div>
-      <div class=" singer">
-        <h2 class="title-section fs18"> Play List</h2>
-        <div class="card-deck">
-          <div class="card">
-            <img class="card-img-top" src="img/giangsinh.jpg" alt="Card image cap">
-
-            <div class="card-body">
-              <h5 class="card-title">Giang Sinh</h5>
-              <p class="card-text">Giang sinh ron rang</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="img/muadong.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Mua Dong</h5>
-              <p class="card-text">Mua le hoi</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="img/giangsinh.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Nam moi</h5>
-              <p class="card-text">Mua yeu thuong</p>
-            </div>
-          </div>
-        </div>
-        <br>
-        <div class="card-deck">
-          <div class="card">
-            <img class="card-img-top" src="img/giangsinh.jpg" alt="Card image cap">
-
-            <div class="card-body">
-              <h5 class="card-title">Giang Sinh</h5>
-              <p class="card-text">Giang sinh ron rang</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="img/muadong.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Mua Dong</h5>
-              <p class="card-text">Mua le hoi</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="img/giangsinh.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Nam moi</h5>
-              <p class="card-text">Mua yeu thuong</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
-    <div class="col-6">col-4</div>
-  </div>
-</div>
-<!--end musicsong-->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <!--end musicsong-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 
-<script src="js/index.js"></script>
-<!-- Settings-modal -->
-<div class="modal fade" id="settings-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-        </button>
-        <h2 class="modal-title" id="exampleModalLabel">#Setting</h2>
-      </div>
-      <div class="modal-body">
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active">
-            <a href="#create" aria-controls="create" role="tab" data-toggle="tab">#Create</a>
-          </li>
-          <li role="presentation">
-            <a href="#upfiles" aria-controls="upfiles" role="tab" data-toggle="tab">#Upfiles</a>
-          </li>
-          <li role="presentation">
-            <a href="#view" aria-controls="view" role="tab" data-toggle="tab">#View</a>
-          </li>
-        </ul>
-        <!-- Tab panes -->
-        <div class="tab-content">
-          <div role="tabpanel" class="tab-pane active" id="create">
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">New</button>
+    <script src="js/index.js"></script>
+    <!-- Settings-modal -->
+    <div class="modal fade" id="settings-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="modal-title" id="exampleModalLabel">#Setting</h2>
+                </div>
+                <div class="modal-body">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#create" aria-controls="create" role="tab" data-toggle="tab">#Create</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#upfiles" aria-controls="upfiles" role="tab" data-toggle="tab">#Upfiles</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#view" aria-controls="view" role="tab" data-toggle="tab">#View</a>
+                        </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="create">
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">New</button>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="upfiles">
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Upload</button>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="view">
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End-tabpanes -->
+                </div>
             </div>
-          </div>
-          <div role="tabpanel" class="tab-pane" id="upfiles">
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Upload</button>
-            </div>
-          </div>
-          <div role="tabpanel" class="tab-pane" id="view">
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">OK</button>
-            </div>
-          </div>
         </div>
-        <!-- End-tabpanes -->
-      </div>
     </div>
-  </div>
-</div>
 
 </div>
 <!-- Signin-modal -->
 <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-        </button>
-        <h4 class="modal-title" id="exampleModalLabel">Sign in</h4>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="username" class="control-label">User name:</label>
-            <input type="text" class="form-control" id="username">
-          </div>
-          <div class="form-group">
-            <label for="password" class="control-label">Password:</label>
-            <input type="password" class="form-control" id="password">
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
-      </div>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="exampleModalLabel">Sign in</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="username" class="control-label">User name:</label>
+                        <input type="text" class="form-control" id="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="control-label">Password:</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <!-- Signup-modal -->
 <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-        </button>
-        <h4 class="modal-title" id="exampleModalLabel">Sign up</h4>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="recipient-name" class="control-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="form-group">
-            <label for="message-text" class="control-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
-      </div>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="exampleModalLabel">Sign up</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="control-label">Recipient:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="control-label">Message:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 </body>
 </html>
