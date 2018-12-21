@@ -292,75 +292,12 @@ i:hover {
     /*border: 1px solid green;*/
     margin-left: 14%;
 }
-
-.playlist{
-  width: 100%;
-
-}
-.song{
-  width: 100%;
-
-}
-/*ca si bai hat*/
-.songmusic{
-    /*border: 1px solid black;*/
-    width: 80%;
-    height: 100px;
-    margin-top: 15px;
-}
-.singer{
-    width: 100%;
-    margin-top: 600px;
-}
 .mb-3{
     border-bottom: 1px solid #f9f8eb;
     font-size: 23px;
-
-}
-.buttonplay{
-    margin-left: 21%;
-    margin-top:.8rem ;
-    color: #16599c;
-}
-.button{
-    margin-left: 41%;
-    color: #16599c;
-    margin-top: .8rem;
-}
-/*chu de*/
-.card-deck{
-    height: 280px;
-    width: 680px;
-}
-/*tieu de*/
-
-.sarif{
-    font-size: 45px;
-}
-p.monospace{
-    font-family: FontAwesome;
-    font-size: 22px;
-    color: #16599c;
-}
-p.serif{
-    color: black;
-    font-size:18px;
 }
 
-.title sub.view {
-    width: 100%;
-    min-height: 200px;
-    display: inline-block;
-    vertical-align: top;
-}
-.title{
-    width: 50%;
-    display: inline-block;
-}
-.sub-view{
-    display: inline-block;
-    width: 48%;
-    float: right;
-    /*float: right;*/
-    margin-top: .5rem;
+
+.fa-headphones {
+    font-size: x-large;
 }

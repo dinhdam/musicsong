@@ -90,15 +90,22 @@
                         <i class="fa fa-retweet" aria-hidden="true"></i>
                     </div>
                 </div>
-                <div class="title">
-                    <p class="monospace">Rolling In Deep</p>
-                    <p class="serif">Adele</p>
-                </div>
-                <div class="sub-view">
-                    <h5>999 <i class="fa fa-headphones"></i></h5>
-                </div>
+               <table class="table table-borderless">
+                   <thead>
+                   <tr>
+                       <th scope="col"><h4>Rolling In The Deep</h4></th>
+                       <th scope="col"><i class="fa fa-headphones">&nbsp;999</i></th>
+                   </tr>
+                   </thead>
+                   <tbody>
+                   <tr>
+                       <th scope="row"><h5>Adele</h5></th>
+                   </tr>
+                   </tbody>
 
-                <div class="songmusic">
+            </table>
+
+                <div class="page-header">
                     <div class="mb-5">
                         <h3 class="footer-heading mb-4">List Song</h3>
                         <div class="block-25">
@@ -119,8 +126,10 @@
 
                                         </div>
 
+
                                     </a>
                                 </li>
+
                                 <li class="mb-3">
                                     <a href="#" class="d-flex">
                                         <figure class="image mr-4">
@@ -183,36 +192,36 @@
                     <h2 class="title-section fs18"> Play List</h2>
                     <div class="card-deck">
                         <div class="card">
-                            <img class="card-img-top" src="img/giangsinh.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="img/huongtram1.jpg" alt="Card image cap">
 
                             <div class="card-body">
-                                <h5 class="card-title">Giang Sinh</h5>
-                                <p class="card-text">Giang sinh ron rang</p>
+                                <h5 class="card-title">Album Huong Tram</h5>
+                                <p class="card-text">Huong Tram</p>
                             </div>
                         </div>
                         <div class="card">
-                            <img class="card-img-top" src="img/muadong.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="img/sobin%20.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Mua Dong</h5>
-                                <p class="card-text">Mua le hoi</p>
+                                <h5 class="card-title">Yeu thuong ngay do</h5>
+                                <p class="card-text">Sobin Hoang Son</p>
                             </div>
                         </div>
                         <div class="card">
-                            <img class="card-img-top" src="img/giangsinh.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="img/thuychi.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Nam moi</h5>
-                                <p class="card-text">Mua yeu thuong</p>
+                                <h5 class="card-title">Nang Tho Xu Hue</h5>
+                                <p class="card-text">Thuy Chi</p>
                             </div>
                         </div>
                     </div>
                     <br>
                     <div class="card-deck">
                         <div class="card">
-                            <img class="card-img-top" src="img/giangsinh.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="img/nhacxuan.jpg" alt="Card image cap">
 
                             <div class="card-body">
-                                <h5 class="card-title">Giang Sinh</h5>
-                                <p class="card-text">Giang sinh ron rang</p>
+                                <h5 class="card-title">Lien Khuc Xuan</h5>
+                                <!--<p class="card-text">Giang sinh ron rang</p>-->
                             </div>
                         </div>
                         <div class="card">
@@ -237,7 +246,7 @@
 
             <div class="col-4">
                 <div class="mb-5">
-                    <h3 class="footer-heading mb-4">Top 100 the loai khac</h3>
+                    <h3 class="footer-heading mb-4">Top 100 thể loại nhạc khác</h3>
                     <div class="block-25">
                         <ul class="list-unstyled">
                             <li class="mb-3">
@@ -333,113 +342,6 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 
     <script src="js/index.js"></script>
-    <!-- Settings-modal -->
-    <div class="modal fade" id="settings-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span>
-                    </button>
-                    <h2 class="modal-title" id="exampleModalLabel">#Setting</h2>
-                </div>
-                <div class="modal-body">
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active">
-                            <a href="#create" aria-controls="create" role="tab" data-toggle="tab">#Create</a>
-                        </li>
-                        <li role="presentation">
-                            <a href="#upfiles" aria-controls="upfiles" role="tab" data-toggle="tab">#Upfiles</a>
-                        </li>
-                        <li role="presentation">
-                            <a href="#view" aria-controls="view" role="tab" data-toggle="tab">#View</a>
-                        </li>
-                    </ul>
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="create">
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">New</button>
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane" id="upfiles">
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Upload</button>
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane" id="view">
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">OK</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End-tabpanes -->
-                </div>
-            </div>
-        </div>
-    </div>
 
-</div>
-<!-- Signin-modal -->
-<div class="modal fade" id="signin-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title" id="exampleModalLabel">Sign in</h4>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <label for="username" class="control-label">User name:</label>
-                        <input type="text" class="form-control" id="username">
-                    </div>
-                    <div class="form-group">
-                        <label for="password" class="control-label">Password:</label>
-                        <input type="password" class="form-control" id="password">
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Send message</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Signup-modal -->
-<div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title" id="exampleModalLabel">Sign up</h4>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <label for="recipient-name" class="control-label">Recipient:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                    </div>
-                    <div class="form-group">
-                        <label for="message-text" class="control-label">Message:</label>
-                        <textarea class="form-control" id="message-text"></textarea>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Send message</button>
-            </div>
-        </div>
-    </div>
-</div>
 </body>
 </html>
