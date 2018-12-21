@@ -306,11 +306,11 @@ i:hover {
     /*border: 1px solid black;*/
     width: 80%;
     height: 100px;
-    margin-top: 12%;
+    margin-top: 15px;
 }
 .singer{
     width: 100%;
-    margin-top: 70%;
+    margin-top: 600px;
 }
 .mb-3{
     border-bottom: 1px solid #f9f8eb;
@@ -318,7 +318,7 @@ i:hover {
 
 }
 .buttonplay{
-    margin-left: 25%;
+    margin-left: 21%;
     margin-top:.8rem ;
     color: #16599c;
 }
@@ -361,5 +361,6 @@ p.serif{
     display: inline-block;
     width: 48%;
     float: right;
+    /*float: right;*/
     margin-top: .5rem;
 }
