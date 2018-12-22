@@ -301,3 +301,9 @@ i:hover {
 .fa-headphones {
     font-size: x-large;
 }
+.class {
+    font-family: Lucida Bright,Georgia,serif;
+}
+.card-title{
+    font-variant: normal
+}
